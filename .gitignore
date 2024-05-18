@@ -6,3 +6,8 @@ code/.DS_Store
 code/*/*/.DS_Store
 code/*/*/*/.DS_Store
 .DS_Store
+code/Transformer/checkpoints
+log/
+code/results
+code/tensorboard_log
+code/trained_models/CSI

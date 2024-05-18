@@ -1,0 +1,67 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug mae",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "args": [
+                "--project_name",
+                "transformer_CSI_mae",
+                "--exp_type",
+                "mae",
+                "--data_name",
+                "CSI",
+                "--data_type",
+                "stock",
+                "--root_path",
+                "C:/dev/StockFormer/data/",
+                "--full_stock_path",
+                "CSI/",
+                "--enc_in",
+                "96",
+                "--dec_in",
+                "96",
+                "--c_out",
+                "96",
+                "--short_term_len",
+                "1",
+                "--long_term_len",
+                "5",
+                "--d_model",
+                "128",
+                "--n_heads",
+                "4",
+                "--e_layers",
+                "2",
+                "--d_layers",
+                "1",
+                "--d_ff",
+                "256",
+                "--dropout",
+                "0.05",
+                "--train_epochs",
+                "50",
+                "--itr",
+                "1",
+                "--batch_size",
+                "32",
+                "--learning_rate",
+                "0.0001",
+                "--adjust_interval",
+                "10",
+                "--num_workers",
+                "10",
+                "--devices",
+                "0"
+            ]
+        }
+    ]
+}

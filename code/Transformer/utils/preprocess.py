@@ -181,7 +181,7 @@ class FeatureEngineer:
         df = df.sort_values(by=["tic", "date"])
         stock = Sdf.retype(df.copy())
         unique_ticker = stock.tic.unique()
-
+        # ['macd', 'boll_ub', 'boll_lb', 'rsi_30', 'cci_30', 'dx_30', 'close_30_sma', 'close_60_sma']
         for indicator in self.tech_indicator_list:
             indicator_df = pd.DataFrame()
             for i in range(len(unique_ticker)):
