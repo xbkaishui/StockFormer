@@ -15,3 +15,4 @@ shortuuid
 tensorboard==2.14.0
 py-spy
 loguru
+matplotlib
